@@ -6,29 +6,9 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/3D BANG BRANDING.gltf");
+  const { nodes, materials } = useGLTF("/4D BANG BRANDING.gltf");
   return (
     <group {...props} dispose={null}>
-      <group position={[0, -0.09, 0.02]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TCC_ARD-geom"].geometry}
-          material={materials.TCC_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TCC_ARD-geom_1"].geometry}
-          material={materials.TCC_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TCC_ARD-geom_2"].geometry}
-          material={materials.TCC_ARD_edge}
-        />
-      </group>
       <group position={[0, -0.07, -0.03]} rotation={[0.02, 0, 0]}>
         <mesh
           castShadow
@@ -53,4 +33,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/3D BANG BRANDING.gltf");
+useGLTF.preload("/4D BANG BRANDING.gltf");

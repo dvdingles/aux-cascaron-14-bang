@@ -6,31 +6,51 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/3D REEMBALAJE.gltf");
+  const { nodes, materials } = useGLTF("/3D BANG BRANDING.gltf");
   return (
     <group {...props} dispose={null}>
-      <group rotation={[Math.PI / 2, 0, 0]}>
+      <group position={[0, -0.09, 0.02]}>
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["TQ_ARD-geom"].geometry}
-          material={materials.TQ_ARD_front}
+          geometry={nodes["TCC_ARD-geom"].geometry}
+          material={materials.TCC_ARD_front}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["TQ_ARD-geom_1"].geometry}
-          material={materials.TQ_ARD_back}
+          geometry={nodes["TCC_ARD-geom_1"].geometry}
+          material={materials.TCC_ARD_back}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["TQ_ARD-geom_2"].geometry}
-          material={materials.TQ_ARD_edge}
+          geometry={nodes["TCC_ARD-geom_2"].geometry}
+          material={materials.TCC_ARD_edge}
+        />
+      </group>
+      <group position={[0, -0.07, -0.03]} rotation={[0.02, 0, 0]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["_1TQ_ARD-geom"].geometry}
+          material={materials._1TQ_ARD_front}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["_1TQ_ARD-geom_1"].geometry}
+          material={materials._1TQ_ARD_back}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["_1TQ_ARD-geom_2"].geometry}
+          material={materials._1TQ_ARD_edge}
         />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/3D REEMBALAJE.gltf");
+useGLTF.preload("/3D BANG BRANDING.gltf");

@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/6D BANG BRANDING.gltf");
+  const { nodes, materials } = useGLTF("/7D BANG BRANDING.gltf");
   return (
     <group {...props} dispose={null}>
       <group position={[0, -0.02, -0.01]} rotation={[-2.71, 0, 0]}>
@@ -33,19 +33,19 @@ export function Dav(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom"].geometry}
+          geometry={nodes["ff_ARD-geom003"].geometry}
           material={materials.ff_ARD_front}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom_1"].geometry}
+          geometry={nodes["ff_ARD-geom003_1"].geometry}
           material={materials.ff_ARD_back}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom_2"].geometry}
+          geometry={nodes["ff_ARD-geom003_2"].geometry}
           material={materials.ff_ARD_edge}
         />
       </group>
@@ -53,19 +53,19 @@ export function Dav(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom"].geometry}
+          geometry={nodes["ff_ARD-geom002"].geometry}
           material={materials.ff_ARD_front}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom_1"].geometry}
+          geometry={nodes["ff_ARD-geom002_1"].geometry}
           material={materials.ff_ARD_back}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom_2"].geometry}
+          geometry={nodes["ff_ARD-geom002_2"].geometry}
           material={materials.ff_ARD_edge}
         />
       </group>
@@ -73,19 +73,19 @@ export function Dav(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom"].geometry}
+          geometry={nodes["ff_ARD-geom001"].geometry}
           material={materials.ff_ARD_front}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom_1"].geometry}
+          geometry={nodes["ff_ARD-geom001_1"].geometry}
           material={materials.ff_ARD_back}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes["ff_ARD-geom_2"].geometry}
+          geometry={nodes["ff_ARD-geom001_2"].geometry}
           material={materials.ff_ARD_edge}
         />
       </group>
@@ -133,4 +133,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/6D BANG BRANDING.gltf");
+useGLTF.preload("/7D BANG BRANDING.gltf");

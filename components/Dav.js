@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/7D BANG BRANDING.gltf");
+  const { nodes, materials } = useGLTF("/8D BANG BRANDING.gltf");
   return (
     <group {...props} dispose={null}>
       <group position={[0, -0.02, -0.01]} rotation={[-2.71, 0, 0]}>
@@ -133,4 +133,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/7D BANG BRANDING.gltf");
+useGLTF.preload("/8D BANG BRANDING.gltf");

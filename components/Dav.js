@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/8D BANG BRANDING.gltf");
+  const { nodes, materials } = useGLTF("/9D BANG BRANDING.gltf");
   return (
     <group {...props} dispose={null}>
       <group position={[0, -0.02, -0.01]} rotation={[-2.71, 0, 0]}>
@@ -69,68 +69,62 @@ export function Dav(props) {
           material={materials.ff_ARD_edge}
         />
       </group>
-      <group position={[0, -0.02, -0.01]} rotation={[-2.71, 0, 0]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["ff_ARD-geom001"].geometry}
-          material={materials.ff_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["ff_ARD-geom001_1"].geometry}
-          material={materials.ff_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["ff_ARD-geom001_2"].geometry}
-          material={materials.ff_ARD_edge}
-        />
-      </group>
-      <group position={[0, -0.07, -0.03]} rotation={[-2.69, 0, 0]} scale={0}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["AA1_ARD-geom"].geometry}
-          material={materials.AA1_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["AA1_ARD-geom_1"].geometry}
-          material={materials.AA1_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["AA1_ARD-geom_2"].geometry}
-          material={materials.AA1_ARD_edge}
-        />
-      </group>
-      <group position={[0, -0.09, 0.02]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TCC_ARD-geom"].geometry}
-          material={materials.TCC_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TCC_ARD-geom_1"].geometry}
-          material={materials.TCC_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TCC_ARD-geom_2"].geometry}
-          material={materials.TCC_ARD_edge}
-        />
-      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["ff_ARD-geom001"].geometry}
+        material={materials.ff_ARD_front}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["ff_ARD-geom001_1"].geometry}
+        material={materials.ff_ARD_back}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["ff_ARD-geom001_2"].geometry}
+        material={materials.ff_ARD_edge}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["AA1_ARD-geom"].geometry}
+        material={materials.AA1_ARD_front}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["AA1_ARD-geom_1"].geometry}
+        material={materials.AA1_ARD_back}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["AA1_ARD-geom_2"].geometry}
+        material={materials.AA1_ARD_edge}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TCC_ARD-geom"].geometry}
+        material={materials.TCC_ARD_front}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TCC_ARD-geom_1"].geometry}
+        material={materials.TCC_ARD_back}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TCC_ARD-geom_2"].geometry}
+        material={materials.TCC_ARD_edge}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/8D BANG BRANDING.gltf");
+useGLTF.preload("/9D BANG BRANDING.gltf");
